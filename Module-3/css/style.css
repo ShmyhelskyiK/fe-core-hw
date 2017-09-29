@@ -8,14 +8,15 @@ body{
 }
 
 .wrapper {
-	width: 500px;
-	margin-left: auto;
+	margin: 10px auto 0 auto;
+/*	margin-left: auto;
 	margin-top: 10px;
-	margin-right: auto;
+	margin-right: auto;*/
 	box-shadow: 0 0 1em grey;
-	padding-left: 36px;
+	padding: 10px 36px 0 36px;
+/*	padding-left: 36px;
 	padding-top: 10px;
-	padding-right: 36px;
+	padding-right: 36px;*/
 }
 
 div {
