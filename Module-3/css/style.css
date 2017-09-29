@@ -57,4 +57,5 @@ a {
 .Social_Network {
 	width: 247px;
 	display: inline-block;
+	vertical-align: top;
 }
