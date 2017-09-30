@@ -12,7 +12,7 @@
 			width: 100%;
 			min-height: 100px;
 			font-family: 'Germania One', cursive;
-			background: #aba3a0;
+			background: #CBB8A7;
 			background: url(../fe-core-hw/Module-1/img/fone3.jpg);
 			background-size: cover;
 			background-repeat:no-repeat;
@@ -23,18 +23,19 @@
 		.wrapper{
 			width: 50%;
 			margin: auto;
+			border-bottom: none;
 		}
 
-		.first, .second, .third  {
+		div  {
 			border-bottom: 2px solid #000;
 			box-shadow: ;
 			padding: 1px;
 		}
 
-		h1 {
-			text-align: right;
+		h1 {			
 			font-family: 'Pathway Gothic One', sans-serif;
 			text-shadow:  1px  1px 0 #FFF;
+			text-align: right;
 		}
 
 		h2 {	
@@ -42,8 +43,10 @@
 		}
 
 		li {
+			height: 25px;
 			display: inline;
-			padding: 3%;
+			padding: 25px;
+
 		}
 
 		a{
@@ -51,21 +54,32 @@
 		}
 
 		a:hover {
-			border: 1px solid #09296E;
-			margin-right: -32px;
-			margin-left: 10px;
-			margin-bottom: 10px;
+			color:#fff;
+			text-shadow:  1px  1px 0 #000;
+			background: #09296E;
+			border: 1px solid #000;	
+			margin-right: -10px;
+			margin-left: -12px;
 			padding: 10px;
-			/*color: #434055;*/
+			font-size: 16px;
 		}
-		
+
 	</style>
 </head>
 <body>
 	<div class="wrapper">
 		<h1>Home Task's</h1>
 
-		<div class="third">
+		<div>
+			<h2>HomeWork#4</h2>
+			<ul>
+				<li><a href="#" target="_blank">Page</a></li>
+				<li><a href="#" target="_blank">Html</a></li>
+				<li><a href="#">Css</a></li>
+			</ul>
+		</div>
+
+		<div>
 			<h2>HomeWork#3 (additional task)</h2>
 			<ul>
 				<li><a href="https://shmyhelskyik.github.io/fe-core-hw/Module-3_task/index.html" target="_blank">Page</a></li>
@@ -73,7 +87,7 @@
 			</ul>
 		</div>	
 
-		<div class="second">
+		<div>
 			<h2>HomeWork#3</h2>
 			<ul>
 				<li><a href="https://shmyhelskyik.github.io/fe-core-hw/Module-3/index.html" target="_blank">Page</a></li>
@@ -81,7 +95,7 @@
 			</ul>
 		</div>
 
-		<div class="first">
+		<div>
 			<h2>HomeWork#1</h2>
 			<ul>
 				<li><a href="https://shmyhelskyik.github.io/fe-core-hw/Module-1/index.html" target="_blank">Page</a></li>
