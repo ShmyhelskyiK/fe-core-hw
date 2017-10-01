@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body{
+	color: #263555; 
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(../img/page-bg.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: auto;
+}
+
+.wrapper {
+	width: 1024px;
+	height: auto;
+	background-color: #fff;
+	margin:230px auto 136px auto;
+/*	margin-top: 230px;
+	margin-right: auto;
+	margin-bottom: 136px;
+	margin-left: auto;*/
+	padding: 118px 36px 88px 36px;
+/*	padding-left: 36px;
+	padding-top: 10px;
+	padding-right: 36px;*/
+}
+
+.profile {
+	width: 650px;
+	float: left;
+
+}
+
+.profile img {
+	float: left;
+	margin-right: 26px;
+	margin-bottom: 26px;
+}
+
+.principles {
+	float: right;
+	width: 272px;
+	height: auto; 
+	overflow: hidden;	
+}
+
+.border {
+	border-bottom: 1px solid #dedbdb;
+	clear: both;
+}
+
+.offer {
+	float: left;
+	width: 650px;
+
+}
+
+.testimonial {
+	float: right;
+	height: 500px;
+	width: 272px;
+
+}
+
+.link{
+	clear: both;
+	display: inline-block;
+	margin-bottom: 88px;
+}
+
+.footer {
+	height: 134px;
+	/*width: 1024px;*/
+	background: #30455B;
+	margin:0px -36px -88px -36px;
+}
+
+h4 {
+	font-family: arial;
+	font-size: 14px;
+}
+
+h2 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+p {
+	font-family: arial;
+	font-size: 13px;
+	color: #4E5050;
+}
+
+ul {
+	list-style-image: url(../img/list_markers.jpg);
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #263555;	
+}
