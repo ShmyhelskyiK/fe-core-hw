@@ -45,6 +45,28 @@ body{
 	overflow: hidden;	
 }
 
+.principles dd {
+	font-family: arial;
+	font-size: 13px;
+	color: #4E5050;
+}
+
+.principles dt {
+	color: #fff;
+	background: #38afe5;
+	border-radius: 20px;
+	width: 10px;
+
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.dd {
+	color: #263555;
+	font-size: 15px
+
+}
+
 .border {
 	border-bottom: 1px solid #dedbdb;
 	clear: both;
