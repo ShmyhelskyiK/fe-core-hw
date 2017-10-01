@@ -60,31 +60,56 @@ body{
 	float: right;
 	height: 500px;
 	width: 272px;
-
+	background: url(../img/Layer 85 copy.jpg);
 }
 
-.link{
+.testimonial p {
+	text-align: center;
+}
+
+.link {
 	clear: both;
 	display: inline-block;
-	margin-bottom: 88px;
+	margin-bottom: 90px;
+	margin-left: -15px;
 }
+
+.link2 {
+	clear: both;
+	display: inline-block;
+	margin-bottom: 90px;
+	vertical-align: top;
+}
+
+.link li {
+	padding: 15px;
+}
+
+.link2 li {
+	padding: 15px;
+}
+
 
 .footer {
 	height: 134px;
-	/*width: 1024px;*/
 	background: #30455B;
 	margin:0px -36px -88px -36px;
 }
 
 h4 {
 	font-family: arial;
-	font-size: 14px;
+	font-size: 15px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 16px;
 }
 
 h2 {
 	font-family: 'Pathway Gothic One', sans-serif;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 32px;
 }
 
 p {
