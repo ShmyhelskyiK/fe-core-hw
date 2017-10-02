@@ -181,7 +181,7 @@ body{
 	clear: both;
 	display: inline-block;
 	margin-bottom: 90px;
-	margin-left: -15px;
+	margin-left: -50px;
 }
 
 .link2 {
@@ -198,7 +198,6 @@ body{
 .link2 li {
 	padding: 15px;
 }
-
 
 .footer {
 	height: 134px;
@@ -241,5 +240,4 @@ a {
 a:before {  
     content: "\21fe";
     color: #38afe5; 
-    margin-left: -36px;
 }
