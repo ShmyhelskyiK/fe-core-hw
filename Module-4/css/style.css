@@ -32,6 +32,10 @@ body{
 
 }
 
+.profile h2 {
+	padding-bottom: 25px;
+}
+
 .profile img {
 	float: left;
 	margin-right: 26px;
@@ -43,6 +47,10 @@ body{
 	width: 272px;
 	height: auto; 
 	overflow: hidden;	
+}
+
+.principles h2{
+	padding-bottom: 25px;
 }
 
 .principles dd {
@@ -75,7 +83,12 @@ body{
 .offer {
 	float: left;
 	width: 650px;
+	/*padding-bottom: 50px;*/
+}
 
+.offer h2{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .testimonial {
@@ -83,6 +96,10 @@ body{
 	height: 500px;
 	width: 272px;
 	background: url(../img/Layer_85 copy.jpg);
+}
+
+.testimonial h2{
+	padding-top: 30px;
 }
 
 .director p {
