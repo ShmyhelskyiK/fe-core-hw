@@ -98,6 +98,7 @@ body{
  .popup-duble-corner {
    background: #fcfafa;
    border: 1px solid #e9e6e6;
+   border-radius: 1px;
    position: relative;
    padding: 10px 20px;
    width: 210px;
