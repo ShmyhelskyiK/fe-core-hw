@@ -68,11 +68,22 @@ body{
 	display: inline;
 }
 
+
+/*-----------------------------------.clearfix:after*/
+
+.principles:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*-----------------------------------.clearfix:after*/
+
+
 .dd {
 	color: #263555;
 	font-size: 15px;	
 	font-weight: bold;
-
 }
 
 .border {
@@ -82,8 +93,7 @@ body{
 
 .offer {
 	float: left;
-	width: 650px;
-	/*padding-bottom: 50px;*/
+	width: 650px;	
 }
 
 .offer h2{
@@ -95,17 +105,11 @@ body{
 	float: right;
 	height: 500px;
 	width: 272px;
-	background: url(../img/Layer_85 copy.jpg);
 }
 
 .testimonial h2{
 	padding-top: 30px;
 }
-
-.director p {
-	text-align: center;
-}
-
 
 
 
@@ -118,7 +122,7 @@ body{
    border-radius: 1px;
    position: relative;
    padding: 10px 20px;
-   width: 210px;
+   width: 175px;
    margin-bottom: 70px;
 }
  
@@ -127,7 +131,7 @@ body{
    	content: '';
    	border: solid transparent;
    	position: absolute;
-   	left: 50%;
+   	left: 43%;
    	margin-left: -12px;
    	bottom: -60px;
    	width: 0;
@@ -142,17 +146,30 @@ body{
    	margin-left: -14px;
 }
 
+/*-----------------------------------------------------testing*/
+
 .popup-duble-corner p {
 	font-family: arial;
 	font-size: 15px;
 	color: #263555;
 }
 
+.popup-duble-corner p:before {  
+    content: open-quote; 
+}
 
-/*-----------------------------------------------------testing*/
+ .popup-duble-corner p:after {  
+    content: close-quote;  
+}  
 
+.director  {
+	width: 210px;
+}
 
-
+.director p {
+	text-align: center;
+	font-size: 13px;
+}
 
 .link {
 	clear: both;
