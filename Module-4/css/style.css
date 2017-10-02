@@ -82,22 +82,59 @@ body{
 	float: right;
 	height: 500px;
 	width: 272px;
-	background: url(../img/Layer 85 copy.jpg);
+	background: url(../img/Layer_85 copy.jpg);
 }
 
-.testimonial p {
+.director p {
 	text-align: center;
-	background: #fcfafa;
-	border: solid 1px #dfdcdc;
 }
 
-#triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid #dfdcdc;
+
+
+
+/*----------------------------------------------------testing*/
+
+
+ .popup-duble-corner {
+   background: #fcfafa;
+   border: 1px solid #e9e6e6;
+   position: relative;
+   padding: 10px 20px;
+   width: 210px;
+   margin-bottom: 70px;
 }
+ 
+.popup-duble-corner:after,
+.popup-duble-corner:before {
+   	content: '';
+   	border: solid transparent;
+   	position: absolute;
+   	left: 50%;
+   	margin-left: -12px;
+   	bottom: -60px;
+   	width: 0;
+}
+.popup-duble-corner:before {
+   	border-top-color: #e9e6e6;
+   	border-width: 30px;
+}
+.popup-duble-corner:after {
+   	border-top-color: #fcfafa;
+   	border-width: 32px;
+   	margin-left: -14px;
+}
+
+.popup-duble-corner p {
+	font-family: arial;
+	font-size: 15px;
+	color: #263555;
+}
+
+
+/*-----------------------------------------------------testing*/
+
+
+
 
 .link {
 	clear: both;
