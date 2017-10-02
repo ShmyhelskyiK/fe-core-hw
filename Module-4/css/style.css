@@ -241,4 +241,5 @@ a {
 a:before {  
     content: "\21fe";
     color: #38afe5; 
+    margin-left: -36px;
 }
