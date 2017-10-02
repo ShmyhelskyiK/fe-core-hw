@@ -46,8 +46,8 @@ body{
 	float: right;
 	width: 272px;
 	height: auto; 
-	overflow: hidden;	
 }
+
 
 .principles h2{
 	padding-bottom: 25px;
@@ -57,6 +57,10 @@ body{
 	font-family: arial;
 	font-size: 13px;
 	color: #4E5050;
+
+	overflow: hidden;
+	height: 80px;
+	width: 170px;
 }
 
 .principles dt {
@@ -82,13 +86,15 @@ body{
 
 .dd {
 	color: #263555;
+	/*height: -80px;*/
 	font-size: 15px;	
 	font-weight: bold;
 }
 
 .border {
 	border-bottom: 1px solid #dedbdb;
-	clear: both;
+	height: auto; 
+	overflow: hidden;
 }
 
 .offer {
