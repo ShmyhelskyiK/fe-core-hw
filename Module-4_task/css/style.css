@@ -1,0 +1,113 @@
+/*--------/1/---------------*/
+.oneone {
+	background-color: #000;
+	height: 50px;
+	padding: 25px;
+}
+
+.oneone li {
+	color: grey;
+	display: inline-block;
+	border: 1px solid #fff;
+	background: gold;
+	padding: 15px;
+	border-radius: 20px;
+}
+
+
+/*--------/2,3/---------------*/
+.twotwo {
+	background-color: #000;
+	height: 50px;
+	padding: 25px;
+}
+
+.twotwo li {
+	color: grey;
+	display: inline-block;
+	border: 1px solid #fff;
+	background: gold;
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.twotwo li:hover {
+	color: #fff;
+	background: #09296E;
+	border: 3px solid gold;	
+	border-radius: 20px;
+	padding: 12px;		
+}
+
+.twotwo li:nth-of-type(3n+1):hover   {
+	background-color: #88292f;
+}
+
+.twotwo li:nth-of-type(3n+2):hover {
+	background-color: #5db7de;
+}
+
+.twotwo li:nth-of-type(3n+3):hover {
+	background-color: #0e1116;
+}
+
+.twotwo li:before {
+	content: "\2192"; 
+}
+
+
+/*--------/4/---------------*/
+#four li {
+	
+}
+
+p:target {
+	display: inline;
+	color: red;
+	background:gold; 
+}
+
+
+/*--------/6/---------------*/
+.content {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background-color: red;
+}
+
+.aside {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background: blue;
+}
+
+
+
+/*--------/7/---------------*/
+
+.seven ol {
+	counter-reset: section;
+	list-style-type: none;
+}
+
+.seven li:before {
+	counter-increment: section;
+	content: counters(section,".")" ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
