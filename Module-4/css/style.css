@@ -12,109 +12,93 @@ body{
 }
 
 .wrapper {
-	width: 1024px;
+	width: 900px;
 	height: auto;
 	background-color: #fff;
 	margin:230px auto 136px auto;
-/*	margin-top: 230px;
-	margin-right: auto;
-	margin-bottom: 136px;
-	margin-left: auto;*/
-	padding: 118px 36px 88px 36px;
-/*	padding-left: 36px;
-	padding-top: 10px;
-	padding-right: 36px;*/
+	padding: 118px 62px 88px 62px;
 }
 
 .profile {
-	width: 650px;
+	width: 644px;
 	float: left;
 
 }
 
 .profile h2 {
-	padding-bottom: 25px;
+	margin: 0 0 49px 0;
 }
 
 .profile img {
 	float: left;
-	margin-right: 26px;
-	margin-bottom: 26px;
+	margin-right: 25px;
+	margin-bottom: 25px;
 }
 
 .principles {
 	float: right;
-	width: 272px;
+	width: 210px;
 	height: auto; 
 }
 
 
 .principles h2{
-	padding-bottom: 25px;
+	margin: 0 0 49px 0px;
 }
 
-.principles dd {
-	font-family: arial;
-	font-size: 13px;
-	color: #4E5050;
+/*----------CSS-счетчик-----------*/
 
-	overflow: hidden;
-	height: 80px;
-	width: 170px;
+.principles ol {
+	counter-reset: MyCount;
+	margin: 0px;
 }
 
-.principles dt {
-	color: #fff;
+.principles li{
+	list-style: none;
+}
+
+.principles li:before {
+	counter-increment: MyCount;
+	content: counter(MyCount);
+	color: white;
 	background: #38afe5;
 	border-radius: 20px;
-	font-size: 13px;
-	padding: 9px 13px 9px 13px;
-	display: inline;
+	display: inline-block;
+	text-align: center;
+	margin: 3px -38px;
+	line-height: 28px;
+	width: 25px;
+	height: 28px;
+	float: left;
 }
 
+/*----------CSS-счетчик-----------*/
 
-/*-----------------------------------.clearfix:after*/
-
-.principles:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-/*-----------------------------------.clearfix:after*/
-
-
-.dd {
-	color: #263555;
-	/*height: -80px;*/
-	font-size: 15px;	
-	font-weight: bold;
-}
 
 .border {
 	border-bottom: 1px solid #dedbdb;
 	height: auto; 
 	overflow: hidden;
+	padding: 0 0 41px 0;
 }
 
 .offer {
 	float: left;
-	width: 650px;	
+	width: 644px;	
 }
 
 .offer h2{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin: 60px 0;
 }
 
 .testimonial {
 	float: right;
-	height: 500px;
-	width: 272px;
+	height: auto;
+	width: 210px;
 }
 
 .testimonial h2{
-	padding-top: 30px;
+	margin: 60px 0 24px 0;
 }
 
 
@@ -127,8 +111,8 @@ body{
    border: 1px solid #e9e6e6;
    border-radius: 1px;
    position: relative;
-   padding: 10px 20px;
-   width: 175px;
+   padding: 10px 19px;
+   width: 170px;
    margin-bottom: 70px;
 }
  
@@ -195,7 +179,7 @@ body{
 	padding: 15px;
 }
 
-.link2 li {
+li.link2 /*li*/ {
 	padding: 15px;
 }
 
@@ -219,6 +203,7 @@ h2 {
 	font-family: 'Pathway Gothic One', sans-serif;
 	text-transform: uppercase;
 	font-size: 32px;
+
 }
 
 p {
