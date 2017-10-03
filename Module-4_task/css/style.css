@@ -1,5 +1,5 @@
 /*--------/1/---------------*/
-.oneone {
+/*.oneone {
 	background-color: #000;
 	height: 50px;
 	padding: 25px;
@@ -12,11 +12,11 @@
 	background: gold;
 	padding: 15px;
 	border-radius: 20px;
-}
+}*/
 
 
 /*--------/2,3/---------------*/
-.twotwo {
+/*.twotwo {
 	background-color: #000;
 	height: 50px;
 	padding: 25px;
@@ -53,23 +53,34 @@
 
 .twotwo li:before {
 	content: "\2192"; 
-}
+}*/
 
 
 /*--------/4/---------------*/
-#four li {
+/*#four li {
 	
 }
 
+p {	
+	width: 500px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+
 p:target {
-	display: inline;
+	border: 1px solid #000;
+	display: inline-block;
 	color: red;
 	background:gold; 
+	width: 500px;
+	margin-left: 15px;
 }
+*/
+
 
 
 /*--------/6/---------------*/
-.content {
+/*.content {
 	display: inline-block;
 	height: 200px;
 	width: 200px;
@@ -82,32 +93,67 @@ p:target {
 	width: 200px;
 	background: blue;
 }
+*/
 
 
+/*--------/CSS -счетчики-к-7-заданию/---------------*/
 
-/*--------/7/---------------*/
 
-.seven ol {
-	counter-reset: section;
-	list-style-type: none;
+/*ol {
+	counter-reset: section 0;           
+
 }
 
-.seven li:before {
-	counter-increment: section;
-	content: counters(section,".")" ";
+li { 
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding: 30px;
+  margin-bottom: 15px;
+  background: #0e0fee;
+  color: #fff;
 }
 
+li::before {
+	content: counter(section, decimal);
+	counter-increment: section 1;
+	display: inline-block;
+	position: absolute;
+	left: -75px;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 12px;
+	font-size: 2rem;
+ 	width: 25px;
+  	height: 25px;
+  	text-align: center;
+  	color: #000;
+  	border-radius: 50%;
+  	border: 3px solid #000;
+}*/
 
 
+/*---------------7-заданию/---------------*/
 
+ol {
+	counter-reset: MyCount;
+}
 
+li{
+	list-style: none;
+}
 
-
-
-
-
-
-
-
-
+li:before {
+	counter-increment: MyCount;
+	content: counter(MyCount);
+	color: white;
+	background: #2980B9;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+	margin: 5px 10px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	/*float: left;*/
+}
 
