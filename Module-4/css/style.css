@@ -19,6 +19,13 @@ body{
 	padding: 118px 62px 88px 62px;
 }
 
+.FirstHalfPage {
+	border-bottom: 1px solid #dedbdb;
+	height: auto; 
+	overflow: hidden;
+	padding: 0 0 41px 0;
+}
+
 .profile {
 	width: 644px;
 	float: left;
@@ -63,23 +70,43 @@ body{
 	color: white;
 	background: #38afe5;
 	border-radius: 20px;
+	border: 1px solid #689fb7;
 	display: inline-block;
 	text-align: center;
-	margin: 3px -38px;
-	line-height: 28px;
-	width: 25px;
-	height: 28px;
+	margin: 4px -40px;
+	line-height: 26px;
+	width: 26px;
+	height: 26px;
 	float: left;
 }
 
 /*----------CSS-счетчик-----------*/
 
+.principles li > h4 {
+	overflow: hidden; 
+	height: 18px;
+    width: 170px; 
+    margin: 20px 0;
+}
 
-.border {
+.principles li > p {
+	overflow: hidden; 
+	height: 82px;
+    width: 170px;
+    margin: 20px 0;
+}
+
+/*.FirstHalfPage {
 	border-bottom: 1px solid #dedbdb;
 	height: auto; 
 	overflow: hidden;
 	padding: 0 0 41px 0;
+}*/
+
+.SecondHalfPage {
+	height: auto; 
+	overflow: hidden;
+	margin-bottom: 90px;
 }
 
 .offer {
@@ -90,6 +117,35 @@ body{
 .offer h2{
 	margin: 60px 0;
 }
+/*-------------.link----------------------*/
+
+.link ul {
+	padding: 0;
+	margin: 0;
+}
+
+.link li {
+	display: inline-block;
+	width: 270px;
+	padding: 16px 0;
+	overflow: hidden;
+	height: 10px;
+	width: 270px;
+}
+
+.link a {
+	text-decoration: none;
+	color: #263555;	
+}
+
+.link a:before {  
+    content: "\21fe";
+    color: #38afe5; 
+    margin-right: 15px;
+} 
+
+		
+/*--------------.link----------------------*/
 
 .testimonial {
 	float: right;
@@ -161,32 +217,16 @@ body{
 	font-size: 13px;
 }
 
-.link {
-	clear: both;
-	display: inline-block;
+/*.SecondHalfPage {
+	height: auto; 
+	overflow: hidden;
 	margin-bottom: 90px;
-	margin-left: -50px;
-}
-
-.link2 {
-	clear: both;
-	display: inline-block;
-	margin-bottom: 90px;
-	vertical-align: top;
-}
-
-.link li {
-	padding: 15px;
-}
-
-.link2 li {
-	padding: 15px;
-}
+}*/
 
 .footer {
 	height: 134px;
 	background: #30455B;
-	margin:0px -36px -88px -36px;
+	/*margin:0px -36px -88px -36px;*/
 }
 
 h4 {
@@ -217,7 +257,7 @@ ul {
 	list-style-type: none;
 }
 
-a {
+/*a {
 	text-decoration: none;
 	color: #263555;	
 }
@@ -226,4 +266,4 @@ a:before {
     content: "\21fe";
     color: #38afe5; 
     margin-right: 15px;
-}
+}*/
