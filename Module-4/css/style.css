@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
 
 body{
+	height: 100%;
 	color: #263555; 
 	margin:0;
 	padding: 0;
@@ -15,8 +16,8 @@ body{
 	width: 900px;
 	height: auto;
 	background-color: #fff;
-	margin:230px auto 136px auto;
-	padding: 118px 62px 88px 62px;
+	margin:230px auto 0/*136px*/ auto;
+	padding: 118px 62px 0/*88px*/ 62px;
 }
 
 .FirstHalfPage {
@@ -96,17 +97,12 @@ body{
     margin: 20px 0;
 }
 
-/*.FirstHalfPage {
-	border-bottom: 1px solid #dedbdb;
-	height: auto; 
-	overflow: hidden;
-	padding: 0 0 41px 0;
-}*/
+
 
 .SecondHalfPage {
 	height: auto; 
 	overflow: hidden;
-	margin-bottom: 90px;
+	padding-bottom: 90px;
 }
 
 .offer {
@@ -204,7 +200,7 @@ body{
     content: open-quote; 
 }
 
- .popup-duble-corner p:after {  
+.popup-duble-corner p:after {  
     content: close-quote;  
 }  
 
@@ -217,17 +213,16 @@ body{
 	font-size: 13px;
 }
 
-/*.SecondHalfPage {
-	height: auto; 
-	overflow: hidden;
-	margin-bottom: 90px;
-}*/
+
 
 .footer {
 	height: 134px;
+	width: 900px;
 	background: #30455B;
-	/*margin:0px -36px -88px -36px;*/
+	margin: 0 auto 224px -62px;
+	padding: 0 62px 0 62px;
 }
+
 
 h4 {
 	font-family: arial;
@@ -256,14 +251,3 @@ ul {
 	/*list-style-image: url(../img/list_markers.jpg);*/
 	list-style-type: none;
 }
-
-/*a {
-	text-decoration: none;
-	color: #263555;	
-}
-
-a:before {  
-    content: "\21fe";
-    color: #38afe5; 
-    margin-right: 15px;
-}*/
