@@ -20,13 +20,6 @@ body{
 	padding: 118px 62px 0/*88px*/ 62px;
 }
 
-.FirstHalfPage {
-	border-bottom: 1px solid #dedbdb;
-	height: auto; 
-	overflow: hidden;
-	padding: 0 0 41px 0;
-}
-
 .profile {
 	width: 644px;
 	float: left;
@@ -54,11 +47,10 @@ body{
 	margin: 0 0 49px 0px;
 }
 
-/*----------CSS-счетчик-----------*/
+/*---CSS-счетчик-----------------------------------------------*/
 
 .principles ol {
 	counter-reset: MyCount;
-	margin: 0px;
 }
 
 .principles li{
@@ -81,29 +73,30 @@ body{
 	float: left;
 }
 
-/*----------CSS-счетчик-----------*/
+/*---CSS-счетчик-----------------------------------------------*/
 
 .principles li > h4 {
 	overflow: hidden; 
 	height: 18px;
     width: 172px; 
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
 .principles li > p {
 	overflow: hidden; 
 	height: 82px;
     width: 172px;
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
-
-
-.SecondHalfPage {
+.FirstHalfPage {
+	border-bottom: 1px solid #dedbdb;
 	height: auto; 
 	overflow: hidden;
-	padding-bottom: 90px;
+	padding: 0 0 41px 0;
 }
+
+/*---CSS-счетчик-----------------------------------------------*/
 
 .offer {
 	float: left;
@@ -113,7 +106,8 @@ body{
 .offer h2{
 	margin: 60px 0;
 }
-/*-------------.link----------------------*/
+
+/*---.link----------------------------------------------------*/
 
 .link ul {
 	padding: 0;
@@ -140,8 +134,7 @@ body{
     margin-right: 15px;
 } 
 
-		
-/*--------------.link----------------------*/
+/*---.link----------------------------------------------------*/
 
 .testimonial {
 	float: right;
@@ -155,29 +148,29 @@ body{
 
 
 
-/*----------------------------------------------------testing*/
+/*---testing----------------------------------------------------*/
 
 
  .popup-duble-corner {
    background: #fcfafa;
    border: 1px solid #e9e6e6;
    border-radius: 1px;
-   position: relative;
+   /*position: relative;*/
    padding: 10px 19px;
    width: 170px;
    margin-bottom: 70px;
 }
- 
+ /*
 .popup-duble-corner:after,
 .popup-duble-corner:before {
    	content: '';
    	border: solid transparent;
    	position: absolute;
-   	left: 43%;
+   	left: 44%;
    	margin-left: -12px;
    	bottom: -60px;
-   	width: 0;
-}
+   	width: 0;*/
+/*}
 .popup-duble-corner:before {
    	border-top-color: #e9e6e6;
    	border-width: 30px;
@@ -186,14 +179,16 @@ body{
    	border-top-color: #fcfafa;
    	border-width: 32px;
    	margin-left: -14px;
-}
+}*/
 
-/*-----------------------------------------------------testing*/
+/*---testing----------------------------------------------------*/
 
 .popup-duble-corner p {
+	display: inline ;
 	font-family: arial;
 	font-size: 15px;
 	color: #263555;
+
 }
 
 .popup-duble-corner p:before {  
@@ -204,6 +199,10 @@ body{
     content: close-quote;  
 }  
 
+/*---testing----------------------------------------------------*/
+
+
+
 .director  {
 	width: 210px;
 }
@@ -213,12 +212,16 @@ body{
 	font-size: 13px;
 }
 
-
+.SecondHalfPage {
+	height: auto; 
+	overflow: hidden;
+	padding-bottom: 90px;
+}
 
 .footer {
-	height: 134px;
-	width: 900px;
 	background: #30455B;
+	height: 134px;
+	width: 900px;	
 	margin: 0 auto 224px -62px;
 	padding: 0 62px 0 62px;
 }
