@@ -9,7 +9,6 @@ body{
 	background: url(../img/page-bg.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
-	background-position: auto;
 }
 
 .wrapper {
@@ -162,7 +161,7 @@ body{
     content: open-quote; 
 }
 
-.pquote p:after {  
+.quote p:after {  
     content: close-quote;  
 }  
 
