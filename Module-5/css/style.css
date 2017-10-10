@@ -14,9 +14,23 @@ body {
     background-repeat:no-repeat;
 }
 
-.wrapper {
-    width: 1024px;
-    margin: 0 auto;
-    padding: 0 auto;
+.logo {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-family: 'Dorsa', sans-serif;
+    font-size: 60px;
+
 }
 
+.wrapper {
+    width: 1024px;
+    background-color: #fff;
+    margin: 230px auto 136px auto;
+    padding: 118px 62px 88px 62px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase ;
+}
