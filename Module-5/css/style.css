@@ -14,7 +14,7 @@ body {
     margin: 10px auto;
     position: relative;
     bottom: 187px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    /*font-family: 'Pathway Gothic One', sans-serif;*/
     text-transform: uppercase;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .logo {
     position: absolute;
-    left: 45%;
+    left: 44%;
     width: 137px;
     height: 137px;
     background: #fff;
@@ -99,6 +99,6 @@ body {
     height: auto;
     background-color: #fff;
     margin: 230px auto 0 auto;
-    padding: 118px 62px 0 62px;
+    padding: 58px 61px;
     display: block;
 }
