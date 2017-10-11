@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'dorsa', sans-serif;
+    background: url(../img/page-bg.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.header{
+    position: relative;
+    background: red;
+    height: 320px;
+    width: 100px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    font-family: 'dorsa';
+    font-size: 60px;
+
+}
+
+.logo > a {
+    position: absolute;
+    top: 100%;
+    text-decoration: none;
+    text-transform: uppercase ;
+}
+
+/*.wrapper {*/
+    /*width: 1024px;*/
+
+    /*margin: 230px auto 136px auto;*/
+    /*padding: 118px 62px 88px 62px;*/
+/*}*/
+

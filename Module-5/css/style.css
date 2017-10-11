@@ -13,6 +13,8 @@ body {
     width: 1024px;
     margin: 10px auto;
     position: relative;
+    bottom: 187px;
+    font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
 }
 
@@ -62,6 +64,10 @@ body {
     line-height: 140px;
 }
 
+.nav > a:hover {
+    color: #263555;
+}
+
 .logo {
     position: absolute;
     left: 45%;
@@ -85,4 +91,14 @@ body {
     font-size: 60px;
     text-decoration: none;
     color: #263555;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 1024px;
+    height: auto;
+    background-color: #fff;
+    margin: 230px auto 0 auto;
+    padding: 118px 62px 0 62px;
+    display: block;
 }
