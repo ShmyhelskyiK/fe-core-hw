@@ -9,69 +9,31 @@ body {
     background-size: cover;
     background-repeat:no-repeat;
 }
+.wrapper {
+    box-sizing: border-box;
+    display: block;
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 62px;
+}
 
 .header {
-    width: 1024px;
-    margin: 10px auto;
-    position: relative;
-    bottom: 187px;
+    hight: 300px;
+    padding: 100px;
+    /*width: 1024px;*/
+    /*margin: 10px auto;*/
+    /*position: relative;*/
+    /*top: 0;*/
     /*font-family: 'Pathway Gothic One', sans-serif;*/
     /*text-transform: uppercase;*/
-}
-
-/*---navigation----------*/
-
-.left1 {
-    position: absolute;
-    left: 100px;
-    /*left: 10%;*/
-}
-
-.left2 {
-    position: absolute;
-    left: 208px;
-    /*left: 22%;*/
-}
-
-.left3 {
-    position: absolute;
-    left: 320px;
-    /*left: 34%;*/
-}
-
-.right1 {
-    position: absolute;
-    left: 634px;
-    /*left: 66%;*/
-}
-.right2 {
-     position: absolute;
-     left: 746px;
-    /*left: 78%;*/
- }
-
-.right3 {
-    position: absolute;
-    left: 846px;
-    /*left: 90%;*/
-}
-
-/*---navigation----------*/
-
-.nav > a {
-    font-size: 28px;
-    text-decoration: none;
-    color: #FFFFFF;
-    line-height: 140px;
-}
-
-.nav > a:hover {
-    color: #263555;
 }
 
 .logo {
     position: absolute;
     left: 44%;
+    top: 50px;
     width: 137px;
     height: 137px;
     background: #fff;
@@ -81,8 +43,6 @@ body {
     /*vertical-align: middle;*/
     line-height: 140px;
     font-weight: normal;
-
-
     /*color: #000000 ;*/
     /*transition: all 2s ease-in-out;*/
 }
@@ -94,15 +54,102 @@ body {
     color: #263555;
 }
 
-.wrapper {
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
     box-sizing: border-box;
-    /*position: relative;*/
-    width: 1024px;
-    height: auto;
-    background-color: #fff;
-    margin: 230px auto 0 auto;
-    padding: 58px 61px;
+    /*background: hsla(0, 50%, 100%, 0.4);*/
+    list-style: none;
+    /* border создаст площадь, где не будет работать  .menu__item:hover */
+    border: 100px transparent;
+    /*font-size: 60px;*/
+    text-transform: uppercase;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+.menu-item > a,
+.submenu-item > a {
+    display: inline-block;
+    /*height: 40px;*/
+    /*padding: 0 35px;*/
+    text-decoration: none;
+    /*line-height: 40px;*/
+    color: #FFFFFF
+}
+.submenu-item > a {
+    color: #6b7488;
+    /*width: 123px;*/
+}
+.menu-item > a {
+    /*width: 95px;*/
+}
+
+.menu-item>a:hover {
+    color: #263555;
+}
+.submenu-item>a:hover {
+    background: hsla(0, 50%, 0%, 0.4);
+}
+
+.submenu {
+    /*!* делаем невидимым .submenu *!*/
+    display: none;
+    /*!* при появлении .submenu окажется поверх других элементов *!*/
+    position: absolute;
+    /*top: 25px;*/
+    /*!* необходимо перекрыть border  .menu  *!*/
+    top: 40px;
+    list-style: none;
+    /*background: hsla(0, 50%, 100%, 0.6);*/
+    padding: 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #6b7488;
+
+}
+
+/*!* делаем .submenu видимым *!*/
+
+.menu-item:hover>.submenu {
     display: block;
+    /*background: hsla(0, 50%, 100%, 0.6);*/
+    background-image: url(../img/fone-sub-menu1.png);
+}
+
+/*.submenu-item {*/
+    /*margin-top: 20px;*/
+    /*text-align: left;*/
+/*}*/
+
+/*.wrapper {*/
+    /*width: 700px;;*/
+    /*height: 300px;*/
+    /*!*margin: auto;*!*/
+/*}*/
+
+
+/*---------------------------------*/
+
+
+.main {
+    background-color: #fff;
+    padding: 58px 61px;
 }
 
 .slider {
@@ -135,25 +182,49 @@ body {
     line-height: 58px;
 }
 
-.controls {
-    position: absolute;
-    left: 4%;
-    bottom: 7%;
-    width: 88px;
-    height: 88px;
-    background: #4cb7e8;
+/*.controls {*/
+    /*position: absolute;*/
+    /*left: 4%;*/
+    /*bottom: 7%;*/
+    /*width: 88px;*/
+    /*height: 88px;*/
+    /*background: #4cb7e8;*/
+    /*display: inline-block;*/
+    /*border-radius: 50%;*/
+    /*text-align: center;*/
+    /*!*vertical-align: middle;*!*/
+    /*line-height: 140px;*/
+    /*font-weight: normal;*/
+/*}*/
+
+/*.controls:before {*/
+    /*content: '\21d0';*/
+/*}*/
+
+/*.controls:after {*/
+    /*content: '\21d2';*/
+/*}*/
+
+.Top-Destinations {
+    font-size: 30px;
+}
+
+.Destinations {
+    height: 270px;
+    width: 288px;
     display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-    /*vertical-align: middle;*/
-    line-height: 140px;
-    font-weight: normal;
+    background-color: #fff;
+    /*border: 1px solid darkred;*/
 }
 
-.controls:before {
-    content: '\21d0';
+.italy {
+    background-image: url(../img/Layer_15.jpg);
 }
 
-.controls:after {
-    content: '\21d2';
+.usa {
+    background-image: url(../img/Layer_16.jpg);
+}
+
+.paris {
+    background-image: url(../img/Layer_17.jpg);
 }
