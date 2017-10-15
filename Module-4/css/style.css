@@ -2,7 +2,7 @@
 
 body {
 	height: 100%;
-	color: #263555; 
+	color: #263555;
 	margin:0;
 	padding: 0;
 	font-family: sans-serif;
@@ -39,7 +39,7 @@ body {
 .principles {
 	float: right;
 	width: 210px;
-	height: auto; 
+	height: auto;
 }
 
 
@@ -76,22 +76,23 @@ body {
 /*---CSS-счетчик-----------------------------------------------*/
 
 .principles li > h4 {
-	overflow: hidden; 
+	overflow: hidden;
 	height: 18px;
-	width: 172px; 
-	margin: 18px 0;
+	width: 172px;
+	margin: 14px 0;
 }
 
 .principles li > p {
-	overflow: hidden; 
-	height: 82px;
+	overflow: hidden;
+	height: 75px;
 	width: 172px;
-	margin: 18px 0;
+	margin: 14px 0;
+	line-height: 15px;
 }
 
 .FirstHalfPage {
 	border-bottom: 1px solid #dedbdb;
-	height: auto; 
+	height: auto;
 	overflow: hidden;
 	padding: 0 0 41px 0;
 }
@@ -100,7 +101,7 @@ body {
 
 .offer {
 	float: left;
-	width: 644px;	
+	width: 644px;
 }
 
 .offer h2{
@@ -119,20 +120,20 @@ body {
 	width: 270px;
 	padding: 16px 0;
 	overflow: hidden;
-	height: 10px;
+	height: 0px;
 	width: 270px;
 }
 
 .link a {
 	text-decoration: none;
-	color: #263555;	
+	color: #263555;
 }
 
 .link a:before {
 	content: "\21fe";
-	color: #38afe5; 
+	color: #38afe5;
 	margin-right: 15px;
-} 
+}
 
 .testimonial {
 	float: right;
@@ -148,22 +149,22 @@ body {
 	width: 211px;
 	height: 219px;
 	background-image: url(../img/Layer_85.jpg);
-	margin-bottom: 38px; 
+	margin-bottom: 38px;
 }
 
-.quote p {	
+.quote p {
 	font-family: arial;
 	font-size: 15px;
 	color: #263555;
 	padding: 20px;
 }
 
-.quote p:before {  
-	content: open-quote; 
+.quote p:before {
+	content: open-quote;
 }
 
 .quote p:after {
-	content: close-quote;  
+	content: close-quote;
 }
 
 .director {
@@ -176,7 +177,7 @@ body {
 }
 
 .SecondHalfPage {
-	height: auto; 
+	height: auto;
 	overflow: hidden;
 	padding-bottom: 90px;
 }
@@ -186,7 +187,7 @@ body {
 	height: 134px;
 	width: 900px;
 	margin: 0 auto 224px -62px;
-	padding: 0 62px 88px 62px;	
+	padding: 0 62px 88px 62px;
 }
 
 
