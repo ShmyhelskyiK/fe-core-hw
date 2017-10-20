@@ -31,6 +31,7 @@
 		}
 
 		div  {
+
 			width: 50%;
 			color: #09296E;  
 			height: auto;
@@ -38,13 +39,10 @@
 			padding: 1px;
 		}
 
-		/*.in-progress {
-			transform: rotate(22deg);
-			position: absolute;
-			top: 	40%;
-			left: 	75%;
-
-		}*/
+		.hw6 {
+			min-height: 150px;
+			height: 100px;
+		}
 
 		h1 {			
 			font-family: 'Pathway Gothic One', sans-serif;
@@ -54,9 +52,6 @@
 
 		h2 {
 			text-shadow:  1px  1px 0 #fff;
-			/*display: inline-block;
-			background: #B5E1F1;
-			border: 1px solid #000;*/
 			border-radius: 20px;
 			padding: 8px; 
 			margin: 10px;
@@ -66,12 +61,11 @@
 		li {
 			display: inline-block;
 			padding-right: 25px;
-			padding-bottom: 15px;
+			padding-bottom: 30px;
 		}
 
 		a{
 			color: #000;
-
 		}
 
 		a:hover {
@@ -86,21 +80,90 @@
 			font-size: 16px;
 		}
 
+	/*___menu___*/
+
+		.menu__item {
+			position: relative;
+			display: inline-block;
+			/*margin-left: 20px;
+	  		margin-right: 20px;*/
+		}
+
+		.submenu__item>a { 
+			width: 123px; 
+		} 
+		.menu__item>a { 
+			width: 95px; 
+		}
+
+		.submenu__item>a:hover {
+			background: hsla(0, 50%, 0%, 0.4);
+		}
+
+		.submenu {
+		width: 300px;
+		  /* делаем невидимым .submenu */
+			display: none;
+		  /* при появлении .submenu окажется поверх других элементов */
+			position: absolute;
+			left: -25px;
+  		/* необходимо перекрыть border  .menu  */
+			top: 40px;
+			list-style: none;
+		}
+
+		/* делаем .submenu видимым */
+		.menu__item:hover>.submenu {
+			display: block;
+		}
+
+		.submenu__item {
+			margin-top: 10px;
+			text-align: left;
+		}
+
+/*---menu---*/
+
+
 	</style>
+
 </head>
 <body>
 	<div class="wrapper">
 		<div class="task">
 			<h1>Home Task's</h1>
 		</div>
-		<!-- <div class="in-progress">
-			<h2>HomeWork in-progress...</h2>
-			<ul>
-				<li><a href="#">Page</a></li>
-				<li><a href="#" target="_blank">Html</a></li>
-				<li><a href="#" target="_blank">Css</a></li>
+		<div class="hw6">
+			<h2>HomeWork#6</h2>
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#" class="sub-sign">About-1024</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="#" target="_blank">Page</a></li>
+						<li class="submenu__item"><a href="#" target="_blank">Html</a></li>
+						<li class="submenu__item"><a href="#" target="_blank">CSS</a></li>
+					</ul>
+				</li>
+
+				<li class="menu__item">
+					<a href="#" class="sub-sign">Gallery-1024</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="https://shmyhelskyik.github.io/fe-core-hw/Module-6/gallery/gallery.html" target="_blank">Page</a></li>
+						<li class="submenu__item"><a href="https://github.com/ShmyhelskyiK/fe-core-hw/blob/master/Module-6/gallery/gallery.html" target="_blank">Html</a></li>
+						<li class="submenu__item"><a href="https://github.com/ShmyhelskyiK/fe-core-hw/blob/master/Module-6/gallery/css/style.css" target="_blank">CSS</a></li>
+					</ul>
+				</li>
+
+				<li class="menu__item">
+					<a href="#" class="sub-sign">Blog-1024</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="#" target="_blank">Page</a></li>
+						<li class="submenu__item"><a href="#" target="_blank">GHtml</a></li>
+						<li class="submenu__item"><a href="#" target="_blank">CSS</a></li>
+					</ul>
+				</li>
 			</ul>
-		</div> -->
+		</div>
 
         <div>
 			<h2>HomeWork#5</h2>
