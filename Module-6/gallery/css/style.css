@@ -248,8 +248,9 @@ h2 {
 
 .wrap {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .list a {
