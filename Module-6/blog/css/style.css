@@ -135,13 +135,41 @@ h2 {
 /*_____________main_down__________________________________*/
 .main {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 850px;
     width: 1024px;
     background-color: #fff;
     position: relative;
     margin: 0 auto;
     padding: 60px;
+}
+
+.Recent-posts {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 644px;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    height:270px;
+    width: 210px;
+}
+
+.archive {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 210px;
 }
 
 
