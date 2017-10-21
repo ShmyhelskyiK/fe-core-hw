@@ -24,20 +24,22 @@ body {
 .profile {
     width: 644px;
     margin-right: 46px;
-    display: flex;
-    flex-wrap: wrap;
+    float: left;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
     /*justify-content: center;*/
     /*align-items: center;*/
-    align-content: flex-start ;
+    /*align-content: flex-start ;*/
 }
 
  .profile > img {
     margin-right: 24px;
+     float: left;
 }
 
 .profile > p {
     /*flex-wrap: wrap;*/
-    width: 260px;
+    /*width: 260px;*/
 }
 
 .principles {
