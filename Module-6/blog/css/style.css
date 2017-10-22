@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Dorsa');
 
 body {
-    height: 1346px;
+    height: auto;
     font-family: 'Pathway Gothic One', sans-serif;
-    text-transform: uppercase;
     background: url(../img/page-bg.jpg);
     background-size: cover;
     background-repeat:no-repeat;
@@ -13,7 +12,18 @@ body {
 h2 {
     font-size: 32px;
     color: #263555;
+    text-transform: uppercase;
+    padding: 30px 0;
 }
+
+h3 {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 13px;
+    color: #263555;
+   }
+
+
 
 .header {
     height: 300px;
@@ -138,7 +148,7 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 850px;
+    height: 1000px;
     width: 1024px;
     background-color: #fff;
     position: relative;
@@ -149,8 +159,58 @@ h2 {
 .Recent-posts {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /*height: auto;*/
     width: 644px;
+}
+
+
+/*------------------------*/
+
+.post-header {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.date{
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 15px;
+    margin-right: 10px;
+    background-color: #38afe5;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.flex-inform{
+    display: flex;
+    flex-direction: column;
+}
+.flex-inform > .inform{
+    text-transform: uppercase;
+    height: 15px;
+    padding-bottom: 10px;
+}
+.coments {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 560px;
+    font-size: 10px;
+    color: #868f8f;
+}
+
+/*------------------------*/
+
+.first {
+    border-bottom: 1px solid #dedbdb;
+    padding-bottom: 50px;
+}
+
+.second {
+    padding-top: 50px;
 }
 
 .post-body {
@@ -158,10 +218,33 @@ h2 {
     flex-direction: row;
 }
 
+img {
+    /*padding-right: 20px;*/
+}
+
+.text {
+    padding: 0 20px;
+}
+
+.text h4 {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 19px;
+    color: #263555;
+}
+
+.text p {
+    font-family: Arial;
+    font-size: 11px;
+    padding-bottom: 18px;
+    line-height: 16px;
+    color: #4e5050;
+}
+
 .categories {
     display: flex;
     flex-direction: column;
-    height:270px;
+    height: auto;
     width: 210px;
 }
 
@@ -173,9 +256,36 @@ h2 {
 }
 
 
-
 /*_____________main_up__________________________________*/
 
+/*---.link----------------------------------------------------*/
+
+.link ul {
+    padding: 0;
+    margin: 0;
+}
+
+.link li {
+    display: inline-block;
+    width: 270px;
+    padding: 8px 0;
+    overflow: hidden;
+    height: 16px;
+    width: 270px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #263555;
+}
+
+.link a:before {
+    content: "\21fe";
+    color: #38afe5;
+    margin-right: 15px;
+}
+
+/*---.link----------------------------------------------------*/
 
 .button-top {
     position: fixed;
