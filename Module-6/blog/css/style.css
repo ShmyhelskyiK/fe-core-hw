@@ -320,6 +320,7 @@ img {
     margin: 0 auto;
     padding: 44px 180px 50px 140px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .list {
