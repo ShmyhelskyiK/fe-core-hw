@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dorsa');
 
 body {
-    height: 1346px;
+    height: auto;
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
     background: url(../img/page-bg.jpg);
@@ -260,3 +260,19 @@ h2 {
 }
 
 /*_____________footer_up__________________________________*/
+
+
+.social-links {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.social-links > .links {
+    padding: 10px;
+}

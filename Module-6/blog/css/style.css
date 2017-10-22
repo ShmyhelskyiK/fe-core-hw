@@ -343,3 +343,18 @@ img {
 }
 
 /*_____________footer_up__________________________________*/
+
+.social-links {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.social-links > .links {
+    padding: 10px;
+}
