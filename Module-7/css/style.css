@@ -116,15 +116,16 @@ body {
 .menu-item>a:hover {
   color: #263555;
 
-  -webkit-transform: rotate(-360deg);
-  -moz-transform: rotate(-360deg);
-  -ms-transform: rotate(-360deg);
-  -o-transform: rotate(-360deg);
-  transform: rotate(-360deg);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 
 .submenu-item>a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  border-bottom: 1px dashed #000;
 }
 
 .submenu {
@@ -363,7 +364,7 @@ body {
 
 .block > p:first-letter{
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .block > button {
