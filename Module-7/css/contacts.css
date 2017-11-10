@@ -201,6 +201,11 @@ iframe {
   text-decoration: none;
   color: #fa7e7e;
 }
+
+.address td{
+  padding: 0 10px;
+}
+
 .address-first {
   margin-top: 130px;
   margin-bottom: 50px;
@@ -219,11 +224,11 @@ iframe {
   font-size: 13px;
   color: #263555;
   width: 210px;
-  padding: 8px;
+  padding: 6px;
 }
 
 .form textarea {
-  height: 200px;
+  height: 210px;
 }
 
 .form button {
@@ -242,7 +247,7 @@ iframe {
   height: 30px;
   width: 80px;
   background: #fcfafa;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #d4d0d0;
   border-radius: 6px;
 
