@@ -343,7 +343,7 @@ body {
   /*display: block;*/
   background: #193149;
 
-  opacity: 1;
+  opacity: .9;
 }
 
 .block > h2 {
@@ -414,6 +414,192 @@ body {
   transition: all 1350ms;
 }
 
+/*_____________content_down__________________________________*/
+
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+}
+.tabs {
+  width: 592px;
+}
+
+#tab2,
+#tab3 {
+  position: fixed;
+}
+
+.tabs > a:hover {
+  color: #60bfea;
+}
+
+.tabs > a,
+.tabs #tab2:target ~ a:nth-of-type(1),
+.tabs #tab3:target ~ a:nth-of-type(1) {
+  padding: 5px;
+  border: 1px solid #aaa;
+  color: #6b7488;
+  background-color: #fcfafa;
+}
+
+.tabs > div {
+  padding: 5px;
+  border: 1px solid #aaa;
+}
+
+.tabs > a {
+  line-height: 32px;
+  background: #fcfafa;
+  font-family: 'Pathway Gothic One', arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.tabs img {
+  height: 105px;
+  width: 200px;
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.content__item {
+  padding: 40px 20px 20px 15px;
+  position: relative;
+  height: 130px;
+}
+
+.content__item h4 {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+}
+
+.content__item p{
+  font-family: arial, sans-serif;
+  font-size: 9px;
+  line-height: 12px;
+  margin-top: 21px;
+}
+
+.content__item span {
+  color: #000;
+}
+
+.content__item a {
+  text-decoration: none;
+  color: #fa7e7e;
+}
+
+.content__item input {
+  margin: 20px 0;
+  position: absolute;
+  left: 494px;
+}
+
+#tab2,
+#tab3,
+.tabs > div,
+.tabs #tab2:target ~ div:nth-of-type(1),
+.tabs #tab3:target ~ div:nth-of-type(1) {
+    display: none;
+}
+
+.tabs > div:nth-of-type(1),
+.tabs #tab2:target ~ div:nth-of-type(2),
+.tabs #tab3:target ~ div:nth-of-type(3) {
+  display: block;
+}
+.tabs > a:nth-of-type(1),
+.tabs #tab2:target ~ a:nth-of-type(2),
+.tabs #tab3:target ~ a:nth-of-type(3) {
+  border-bottom: 2px solid #fff;
+  background-color: #fff;
+}
+
+
+/*_____________content_up__________________________________*/
+
+.newsletter{
+  width: 288px;
+  border: 1px solid #aaa;
+  margin-left: 20px;
+}
+
+.mail h3{
+  background: #fcfafa;
+  border-bottom: 1px solid #aaa;
+  padding: 7px 0;
+  font-family: 'Pathway Gothic One', arial, sans-serif;
+  font-size: 20px;
+  color: #6b7488;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mail p{
+  font-family: arial, sans-serif;
+  color: #263555;
+  font-size: 15px;
+  margin:0 15px;
+  padding: 45px 0 20px 0;
+}
+
+form{
+  text-align: center;
+}
+form > input[type="email"]{
+  width: 200px;
+  padding: 5px 25px;
+  border:1px solid #aaa;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.link > ul {
+  margin: 45px 15px;
+}
+
+.link a{
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  color: #263555;
+ }
+
+.link > ul > li:before{
+  content: url(../img/marker.png);
+  margin-right: 15px;
+}
+
+.link > ul > li{
+  padding-bottom: 10px;
+}
+
+/*.link li {*/
+  /*display: inline-block;*/
+  /*width: 270px;*/
+  /*padding: 16px 10px;*/
+  /*overflow: hidden;*/
+  /*!*height: 0px;*!*/
+  /*!*width: 270px;*!*/
+  /*!*line-height: 0px;*!*/
+/*}*/
+
+/*.link a {*/
+  /*text-decoration: none;*/
+  /*color: #263555;*/
+/*}*/
+
+/*.link a:before {*/
+  /*content: url(../img/marker.png);*/
+  /*background: #38afe5;*/
+  /*border: 1px solid #38afe5;*/
+  /*border-radius: 200px;*/
+  /*color: #fff;*/
+  /*margin-right: 15px;*/
+/*}*/
 
 /*_____________footer_down__________________________________*/
 
