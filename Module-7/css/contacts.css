@@ -185,6 +185,11 @@ h2 {
   margin: 50px 0;
 }
 
+iframe {
+  width: 440px;
+  height: 420px;
+ }
+
 .address {
   font-family: arial, sans-serif;
   font-size: 14px;
@@ -201,29 +206,25 @@ h2 {
   margin-bottom: 50px;
 }
 
-.contact-us {
-  display: flex;
-  flex-direction: column;
-}
-
 .form {
   width: 210px;
 }
 
 .form input,
 .form textarea {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   background: #fcfafa;
   border: 1px solid #d4d0d0;
   font-size: 13px;
   color: #263555;
+  width: 210px;
+  padding: 8px;
 }
 
-::-webkit-input-placeholder {color:#263555;padding: 10px;}
-::-moz-placeholder          {color:#263555;padding: 10px;}/* Firefox 19+ */
-:-moz-placeholder           {color:#263555;padding: 10px;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#263555;padding: 10px;}
+.form textarea {
+  height: 200px;
+}
 
 .form button {
   position: relative;
@@ -236,8 +237,6 @@ h2 {
   border: 1px solid #d4d0d0;
   border-radius: 6px;
 }
-
-
 
 .form button:active {
   height: 30px;
