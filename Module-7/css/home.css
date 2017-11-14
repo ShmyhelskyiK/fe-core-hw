@@ -414,7 +414,7 @@ body {
   transition: all 1350ms;
 }
 
-/*_____________content_down__________________________________*/
+/*_____________news_down__________________________________*/
 
 .news {
   display: flex;
@@ -484,8 +484,14 @@ body {
   height: 397px;
   color: #4e5050;
   border: 1px solid #dedbdb;
-  padding: 40px 14px;
+  padding: 20px 14px;
 
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .content img {
@@ -499,6 +505,7 @@ body {
   font-family: arial, sans-serif;
   font-size: 15px;
   color: #263555;
+  margin: 20px 0;
 }
 
 .content a {
@@ -510,7 +517,8 @@ body {
   font-family: arial, sans-serif;
   font-size: 9px;
   line-height: 12px;
-  margin-top: 21px;
+  /*margin-top: 21px;*/
+  margin: 20px 0;
 }
 
 .content span {
@@ -518,7 +526,7 @@ body {
 }
 
 .content input {
-  margin: 20px 0;
+  /*margin: 20px 0;*/
   position: relative;
   left: 470px;
   background: #fff;
