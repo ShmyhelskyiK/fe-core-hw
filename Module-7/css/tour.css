@@ -1,9 +1,8 @@
 body {
   height: auto;
   font-family: 'Pathway Gothic One', sans-serif;
-  background: url(../img/page-bg.jpg);
+  background: url(../img/page-bg.jpg) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /*_____________header_down__________________________________*/
@@ -170,11 +169,30 @@ body {
   display: flex;
 }
 
-.specials-tours {
-  /*border: 1px solid darkred;*/
-  /*width: 690px;*/
-  /*display: flex;*/
+.content h2 {
+  font-family: "Pathway Gothic One", arial, sans-serif;
+  color: #263555;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-bottom: 45px;
 }
+
+.content input {
+  background: #fff;
+  border: 1px solid #c6c1c1;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+.content input:active {
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+
 
 .tours {
   display: flex;
@@ -190,7 +208,41 @@ body {
 .tour6 {
   display: flex;
   flex-basis: 310px;
+  padding-bottom: 80px;
+}
 
+.info {
+  margin: 0 20px 0;
+  position: relative;
+}
+
+.info h3 {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  padding-bottom: 14px;
+}
+
+
+.info p {
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  color: #4e5050;
+  padding-bottom: 5px;
+}
+
+.tours .price {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #38afe5;
+  font-weight: bold;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.tours input {
+  position: absolute;
+  top: 135px;
 }
 
 .aside {
@@ -198,22 +250,53 @@ body {
   flex-direction: column;
 }
 
+.aside p {
+  margin-bottom: 9px;
+}
+
+.aside span {
+  color: #38afe5;
+}
+
+.aside select {
+  margin-bottom: 22px;
+  padding: 1px 10px;
+  font-size: 10px;
+  height: 20px;
+  color: #868f8f;
+}
+
 .aside textarea {
-  width: 204px;
+  width: 194px;
   height: 40px;
   resize: none;
+  font-size: 10px;
+  font-weight: bold;
   background: #e3e2e2;
+  border: 1px solid #d2cece;
+  padding-left: 12px;
+  margin: -19px 0 16px;
 }
 
 .browse {
   display: flex;
   flex-direction: column;
+  font-family: arial, sans-serif;
+  font-size: 10px;
 }
 
 .search {
   display: flex;
   flex-direction: column;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+}
 
+.browse input,
+.search input {
+  width: 60px;
+  margin-bottom: 16px;
+  font-size: 12px;
 }
 
 /*_____________button-top_down__________________________________*/
