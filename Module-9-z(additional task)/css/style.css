@@ -1,0 +1,44 @@
+body {
+
+}
+
+.wrapper {
+  width: 720px;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+.one {
+  background-color: yellow;
+  padding: 40px;
+  text-align: center;
+  margin: 0 -15px;
+}
+
+.two {
+  background-color: greenyellow;
+  padding: 40px;
+  text-align: center;
+  margin: 0 -15px;
+}
+
+.three {
+  background-color: goldenrod;
+  padding: 40px;
+  text-align: center;
+  margin: 0 -15px;
+
+}
+
+.four {
+  background-color: deeppink;
+  padding: 40px;
+  text-align: center;
+  margin: 0 -15px;
+
+}
+
+
+.border {
+  border-bottom: 2px dashed black;
+}
