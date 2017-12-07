@@ -1,0 +1,285 @@
+  /* Specification */
+
+body {
+  height: auto;
+  background: url("../img/page-bg.jpg") no-repeat center center;
+  background-size: cover;
+  text-transform: uppercase;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+ol, ul, li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.dark-blue {
+  background-color: #30455b;
+}
+
+.wrapper {
+  width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 26px 36px;
+}
+
+.title {
+  margin: 54px 0 42px;
+}
+
+
+/*----------------------------------------*/
+  /* HEADER */
+
+.header {
+  width: 480px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-bottom: 60px;
+}
+
+.logo {
+  background-color: #fff;
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  color: #263555;
+  font-family: 'Dorsa', sans-serif;
+  text-align: center;
+  font-size: 34px;
+  padding-top: 22px;
+  transition: all 1550ms;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  color: gold;
+  background-color: #263555;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__link {
+  color: #fff;
+  margin: 20px;
+}
+
+.menu__link:hover,
+.submenu__link:hover {
+  text-decoration: none;
+  color: #263555;
+}
+
+.menu__item:hover >.submenu {
+  display: block;
+
+}
+
+.submenu {
+  display: none;
+  width: 46px;
+  position: absolute;
+  left: 94px;
+  z-index: 50;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.submenu:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 2.5px 3px 2.5px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  top: -3px;
+  right: 20px;
+}
+
+.submenu__link {
+  color: #6b7488;
+}
+
+/*----------------------------------------*/
+  /* SECTION GALLERY */
+
+
+.wrap {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wrap:hover:before {
+  content: url(../img/loop.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+
+.wrap__image {
+  width: 100%;
+  transition: all 550ms;
+}
+
+.wrap__image:hover {
+  opacity: .3;
+}
+
+/*----------------------------------------*/
+  /* SECTION FOOTER */
+
+.link {
+  color: #fff;
+}
+  
+.contact {
+  align-items: flex-end;
+}
+
+.contact__text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+.fb,
+.google,
+.linkedin,
+.twitter  {
+  background: url(../img/index.png) no-repeat;
+  margin: 10px;
+}
+
+.fb { background-position: -10px -0px; width: 40px; height: 40px; }
+.google { background-position: -60px -0px; width: 40px; height: 40px; }
+.linkedin { background-position: -10px -50px; width: 40px; height: 40px; }
+.twitter { background-position: -60px -50px; width: 40px; height: 40px; }
+
+
+/*----------------------------------------*/
+  /* MEDIA REQUEST */
+
+@media (min-width: 768px) {
+
+  /* Specification */
+
+  .wrapper {
+    width: 720px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 38px 46px 36px;
+  }
+
+  /* HEADER */
+
+  .header {
+    width: 720px;
+    font-size: 24px;
+  }
+
+  .logo {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #263555;
+    font-family: 'Dorsa', sans-serif;
+    text-align: center;
+    font-size: 44px;
+    padding-top: 25px;
+  }
+
+  .menu__link {
+     margin: 30px;
+   }
+
+  .submenu {
+    display: none;
+    width: 58px;
+    position: absolute;
+    left: 130px;
+    z-index: 50;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .submenu:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 3px 2.5px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -3px;
+    right: 26px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  /* Specification */
+
+  .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 42px 60px 30px;
+  }
+
+  /* HEADER */
+
+  .header {
+    font-size: 28px;
+    width: 1024px;
+    padding-bottom: 100px;
+  }
+
+  .logo {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    top: 100px;
+    font-size: 60px;
+    padding-top: 37px;
+  }
+
+  .menu__link {
+    margin: 20px;
+  }
+
+  .submenu {
+    width: 68px;
+    left: 106px;
+    font-size: 20px;
+  }
+
+  .submenu:before {
+    right: 30px;
+  }
+}
