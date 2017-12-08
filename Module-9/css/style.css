@@ -280,6 +280,7 @@ ol, ul, li {
     width: 68px;
     position: absolute;
     left: 106px;
+    /*left: 70px;      !*заменить при активации доп. пунктов меню*!*/
     font-size: 20px;
   }
 
