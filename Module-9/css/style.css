@@ -181,6 +181,25 @@ ol, ul, li {
 /*.twitter { background-position: -60px -50px; width: 40px; height: 40px; }*/
 
 
+.scrollup {
+  position: fixed; /* фиксированная позиция */
+  color: #fff; /* цвет текста */
+  background-color: #286090; /* цвет заднего фона */
+  right: 20px; /* расстояние от правого края */
+  bottom: 20px; /* расстояние от нижнего края */
+  padding: 4px 10px; /* отступы до содержимого блока */
+  font-size: 20px; /* размер шрифта (иконки) */
+  border-radius: 25px; /* скругление углов */
+  cursor: pointer; /* форма курсора */
+  display: none; /* не отображать элемент */
+  text-align: center; /*выравнивание содержимого элемента по центру */
+}
+
+.scrollup:hover {
+  background-color: #000; /* цвет заднего фона при наведении */
+}
+
+
 /*----------------------------------------*/
   /* - MEDIA REQUEST - */
 
