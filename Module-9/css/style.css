@@ -166,6 +166,14 @@ ol, ul, li {
   text-transform: none;
 }
 
+.fa-mobile{
+  font-size: 30px;
+}
+
+.fa-envelope-o {
+  font-size: 26px;
+}
+
   /*пробовал сделать соц сети спрайтом*/
 .fb,
 .google,
