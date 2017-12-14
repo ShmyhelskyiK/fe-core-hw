@@ -127,7 +127,7 @@ ol, ul, li {
 }
 
 /*----------------------------------------*/
-/* - AGENCY PROFILE SECTION - */
+/* - CONTENT SECTION - */
 
 .wrap__image {
   width: 100%;
@@ -331,6 +331,14 @@ ol, ul, li {
      left: 46px;
    }
 
+   /* - CONTENT SECTION - */
+
+  .list li:before {
+    position: absolute;
+    left: -20px
+  }
+
+
   /* - FOOTER SECTION - */
 
   .footer__menu_decoration  {
@@ -398,6 +406,13 @@ ol, ul, li {
   .triangle-bottom {
     position: relative;
     left: 70px;
+  }
+
+  /* - CONTENT SECTION - */
+
+  .list li:before {
+    position: absolute;
+    left: -35px
   }
 
   /* - FOOTER SECTION - */
