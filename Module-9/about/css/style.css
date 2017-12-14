@@ -27,7 +27,7 @@ ol, ul, li {
 }
 
 .title {
-  margin: 54px 0 42px;
+  margin: 40px 0 30px;
   color: #263555;
   text-transform: uppercase;
 }
@@ -42,6 +42,11 @@ ol, ul, li {
   font-family: arial, sans-serif;
   font-size: 12px;
   color: #4e5050;
+}
+
+.border {
+  border-bottom: 1px solid #dedbdb;
+  padding-bottom: 50px;
 }
 
 
@@ -164,9 +169,16 @@ ol, ul, li {
   line-height: 27px;
 }
 
+.offer a {
+  color: #263555;
+  text-decoration: none;
+  line-height: 30px;
+}
+
 .offer a:before {
   content: "\2192";
-  color: #4c9dce;
+  color: #38afe5;
+  margin-right: 10px;
 }
 
 .quote {
@@ -239,12 +251,26 @@ ol, ul, li {
   text-transform: none;
 }
 
-.fa-mobile{
+.fa-mobile {
   font-size: 30px;
+  position: relative;
+  left: -5px;
+  bottom: -5px;
 }
 
 .fa-envelope-o {
   font-size: 26px;
+  position: relative;
+  left: -5px;
+  bottom: -5px;
+}
+
+.contact a {
+  color: #fff;
+}
+
+.contact a:hover {
+  color: #e4b164;
 }
 
 /*пробовал сделать соц сети спрайтом*/
@@ -338,6 +364,10 @@ ol, ul, li {
     left: -20px
   }
 
+  .quote {
+    padding: 14px 5px;
+  }
+
 
   /* - FOOTER SECTION - */
 
@@ -414,6 +444,10 @@ ol, ul, li {
     position: absolute;
     left: -35px
   }
+
+  .quote {
+     padding:  22px;
+   }
 
   /* - FOOTER SECTION - */
 
