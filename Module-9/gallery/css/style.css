@@ -166,13 +166,27 @@ ol, ul, li {
   text-transform: none;
 }
 
-.fa-mobile{
+.fa-mobile {
   font-size: 30px;
+  position: relative;
+  left: -5px;
+  bottom: -5px;
 }
 
 .fa-envelope-o {
   font-size: 26px;
+  position: relative;
+  left: -5px;
+  bottom: -5px;
 }
+
+.contact a {
+  color: #fff;
+}
+
+  .contact a:hover {
+    color: #e4b164;
+  }
 
   /*пробовал сделать соц сети спрайтом*/
 .fb,
