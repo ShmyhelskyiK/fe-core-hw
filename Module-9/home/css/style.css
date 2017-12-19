@@ -120,12 +120,13 @@ ol, ul, li {
 
 .slider {
   position: relative;
-  height: 450px;
+  /*height: 450px;*/
 }
 
 .slider__content {
   position: absolute;
   opacity: 0;
+  top: 0;
 }
 
 .slider__content h4{
@@ -155,8 +156,8 @@ input {
 }
 
 .slider__label_l {
-  height: 90px;
-  width: 45px;
+  height: 70px;
+  width: 35px;
   background: #38afe5;
   border-radius: 50px 0 0 50px;
   position: absolute;
@@ -172,8 +173,8 @@ input {
   color: #fff;
   font-size: 50px;
   position: relative;
-  left: 15px;
-  top: 5px;
+  left: 10px;
+  bottom: 3px;
 }
 
 .slider__label_l:hover,
@@ -182,13 +183,13 @@ input {
 }
 
 .slider__label_r {
-  height: 90px;
-  width: 45px;
+  height: 70px;
+  width: 35px;
   background: #38afe5;
   border-radius: 0 50px 50px 0;
   position: absolute;
   top: 150px;
-  left: 94px;
+  left: 84px;
   cursor: pointer;
   z-index: 15;
   transition: all 1s;
@@ -199,8 +200,8 @@ input {
   color: #fff;
   font-size: 50px;
   position: relative;
-  left: 20px;
-  top: 5px;
+  left: 16px;
+  bottom: 3px;
 }
 
 .slider__label_r:hover,
@@ -215,18 +216,45 @@ input {
 /*-------------------*/
 
 .block {
-  display: none;
   background: #193149;
   color: #fff;
   position: absolute;
   top: 0;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  opacity: .9;
   font-family: arial, sans-serif;
   font-size: 10px;
-  /*text-align: center;*/
   padding: 3px;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.block > h3 {
+  font-family: "Pathway Gothic One", arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 0 6px;
+  text-transform: uppercase;
+}
+
+.block > p {
+  font-size: 10px;
+  color: #cbc6c6;
+  text-transform:  none;
+  padding: 0 5px;
+}
+
+.block .btn {
+  margin: 20px 0;
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  background: #fff;
+  border: 1px solid #c6c1c1;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
 }
 
 .italy,
@@ -235,12 +263,197 @@ input {
   position: relative;
 }
 
-.italy:hover > .block,
-.usa:hover > .block,
-.france:hover > .block {
+.italy:hover .block,
+.usa:hover .block,
+.france:hover .block {
   display: block;
+  opacity: .9;
 }
 /*--------------------*/
+/*_____________news_down__________________________________*/
+
+.news {
+  margin: 50px 0;
+}
+
+.tabs {
+  /*width: 594px;*/
+  height: 450px;
+  font-size: 20px;
+}
+
+.tabs > input {
+  display: none;
+}
+
+.tabs input[id="tab-1"]:checked ~ .content .content__item-1,
+.tabs input[id="tab-2"]:checked ~ .content .content__item-2,
+.tabs input[id="tab-3"]:checked ~ .content .content__item-3 {
+  display: block;
+}
+
+.tabs input[id="tab-2"] ~ label {
+  margin: -4px;
+}
+
+.tabs input:checked + label {
+  color: #38afe5;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.tabs label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 30px;
+  font-family: "Pathway Gothic One" ,arial, sans-serif;
+  color: #6b7488;
+  background: #fcfafa;
+  border: 1px solid #dedbdb;
+  /*margin-left: -5px;*/
+  text-transform: uppercase;
+}
+
+.tabs label:hover {
+  color: #38afe5;
+}
+.content {
+  font-family: arial, sans-serif;
+  position: relative;
+  /*left: -5px;*/
+  color: #4e5050;
+  width: auto;   /*580px;*/
+  height: 400px;
+}
+
+.content__item-1,
+.content__item-2,
+.content__item-3 {
+  display: none;
+  position: absolute;
+  top: -9px;
+  left: 0;
+  color: #4e5050;
+  border: 1px solid #dedbdb;
+  padding: 20px 14px;
+
+}
+.clearfix {
+  position: relative;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.content img {
+  height: 110px;
+  width: 200px;
+  float: left;
+  padding-right: 20px;
+}
+
+.content h4 {
+  font-size: 15px;
+  color: #263555;
+  margin: 20px 0;
+}
+
+.content a {
+  text-decoration: none;
+  color: #fa7e7e;
+}
+
+.content p {
+  font-size: 9px;
+  line-height: 12px;
+  margin: 20px 0;
+}
+
+.content span {
+  color: #000;
+}
+
+.content .btn {
+  margin: 20px 0;
+  position: absolute;
+  top: 120px;
+  right: 15px;
+  background: #fff;
+  border: 1px solid #c6c1c1;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+
+
+
+
+/*__
+
+/*--------------------*/
+.newsletter{
+  border: 1px solid #dedbdb;
+}
+
+.min-title {
+  font-family: 'Pathway Gothic One', arial, sans-serif;
+  font-size: 20px;
+  color: #263555;
+  background: #fcfafa;
+  border-bottom: 1px solid #dedbdb;
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mail p{
+  font-family: arial, sans-serif;
+  color: #263555;
+  font-size: 15px;
+  text-transform: none;
+  padding-top: 20px;
+}
+
+.form-control {
+  padding: 4px 25px;
+  border:1px solid #e2dfdf;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.link > ul {
+  margin: 45px 15px;
+}
+
+.link a{
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  color: #263555;
+}
+
+.link > li:before{
+  content: url(../img/marker.png);
+  margin-right: 15px;
+}
+
+.link > ul > li{
+  padding-bottom: 10px;
+}
 
 /*----------------------------------------*/
 /* - FOOTER SECTION - */
@@ -369,18 +582,22 @@ input {
 
   /* - HOME SECTION - */
 
-  .slider {
-    height: 420px;
-  }
-
   .slider__content h4{
     position: absolute;
     top: 125px;
+    color: #263555;
+    background-color: #fff;
+    padding: 10px 25px 10px 10px;
+    transition: all 1s;
   }
 
   .slider__content h2 {
     position: absolute;
     top: 170px;
+    color: #fff;
+    background-color: #38afe5;
+    padding: 10px 25px 10px 10px;
+    transition: all 1s;
   }
 
   .slider__label_l {
@@ -391,14 +608,41 @@ input {
     left: 50px;
   }
 
+  .slider__label_l:after {
+    font-size: 50px;
+    position: relative;
+    left: 14px;
+    bottom: -5px;
+  }
+
   .slider__label_r {
     height: 90px;
     width: 45px;
     position: absolute;
     top: 280px;
-    left: 95px;
+    left: 94px;
   }
 
+  .slider__label_r:after {
+    font-size: 50px;
+    position: relative;
+    left: 21px;
+    bottom: -5px;
+  }
+  /*------------------*/
+  .block {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  /*------------------*/
+  .content .btn {
+    position: absolute;
+    top: 100px;
+    right: 15px;
+  }
+  /*----------------------*/
 
   /* - FOOTER SECTION - */
 
@@ -467,7 +711,7 @@ input {
   /* - HOME SECTION - */
 
   .slider {
-    height: 560px;
+    /*height: 560px;*/
   }
 
   .slider__content h4{
