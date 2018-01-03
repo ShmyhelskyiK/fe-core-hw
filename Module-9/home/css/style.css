@@ -278,7 +278,7 @@ input {
 
 .tabs {
   /*width: 594px;*/
-  height: 450px;
+  height: 430px;
   font-size: 20px;
 }
 
@@ -337,7 +337,7 @@ input {
   left: 0;
   color: #4e5050;
   border: 1px solid #dedbdb;
-  padding: 20px 14px;
+  padding: 20px 14px 50px;
 
 }
 .clearfix {
