@@ -71,6 +71,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 20px;
   margin: 0 auto;
   padding: 20px 0 60px;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -346,6 +347,7 @@ h1,h2,h3,h4,h5,h6 {
 .footer {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .contact__text {
