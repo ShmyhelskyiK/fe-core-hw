@@ -71,6 +71,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 20px;
   margin: 0 auto;
   padding: 20px 0 60px;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -131,7 +132,32 @@ h1,h2,h3,h4,h5,h6 {
   color: #6b7488;
 }
 
+/*----------------------------------------*/
+/* - GALLERY SECTION - */
 
+.wrap {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wrap:hover:before {
+  content: url(../img/loop.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+
+.wrap__image {
+  width: 100%;
+  transition: all 550ms;
+}
+
+.wrap__image:hover {
+  opacity: .3;
+}
 
 /*----------------------------------------*/
 /* - FOOTER SECTION - */
@@ -140,6 +166,7 @@ h1,h2,h3,h4,h5,h6 {
 .footer {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .contact__text {
