@@ -46,6 +46,12 @@ h1,h2,h3,h4,h5,h6 {
   /*text-transform: uppercase;*/
 /*}*/
 
+.title {
+   margin: 40px 0 30px;
+   color: #263555;
+   text-transform: uppercase;
+ }
+
 .btn {
   background: #fff;
   border: 1px solid #c6c1c1;
