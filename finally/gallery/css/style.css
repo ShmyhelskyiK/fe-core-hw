@@ -2,7 +2,7 @@
 
 body {
   height: auto;
-  background: url("../img/page-bg.jpg") no-repeat center center;
+  background: #dddddd url("../img/page-bg.jpg") no-repeat center center;
   background-size: cover;
   font-family: 'Pathway Gothic One', sans-serif;
   text-transform: uppercase;
@@ -40,11 +40,6 @@ ol, ul, li {
 h1,h2,h3,h4,h5,h6 {
   color: #263555;
 }
-
-/*h2 {*/
-  /*margin-bottom: 40px;*/
-  /*text-transform: uppercase;*/
-/*}*/
 
 .title {
    margin: 40px 0 30px;
@@ -203,11 +198,34 @@ h1,h2,h3,h4,h5,h6 {
   bottom: -4px;
 }
 
-.fb,
-.google,
-.linkedin,
-.twitter  {
-  margin: 10px;
+.twitter__img,
+.fb__img,
+.google__img,
+.linked__img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 10px 10px;
+}
+
+.twitter__img:hover {
+  background-color: #263555;
+  border-radius: 50%;
+  padding: 2px;
+}
+.fb__img:hover {
+  background-color: #263555;
+  border-radius: 50%;
+  padding: 2px;
+}
+.google__img:hover {
+  background-color: #263555;
+  border-radius: 50%;
+  padding: 2px;
+}
+.linked__img:hover {
+  background-color: #263555;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 /*----------------------------------------*/
