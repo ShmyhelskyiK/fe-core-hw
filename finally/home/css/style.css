@@ -41,11 +41,6 @@ h1,h2,h3,h4,h5,h6 {
   color: #263555;
 }
 
-/*h2 {*/
-  /*margin-bottom: 40px; ---> .card */
-  /*text-transform: uppercase;*/
-/*}*/
-
 .btn {
   background: #fff;
   border: 1px solid #c6c1c1;
@@ -70,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 480px;
   font-size: 20px;
   margin: 0 auto;
-  padding: 20px 0 60px;
+  padding: 20px 0 20px;
   text-transform: uppercase;
 }
 
@@ -323,10 +318,6 @@ h1,h2,h3,h4,h5,h6 {
   cursor: pointer;
 }
 
-/*.link > ul {*/
-  /*margin: 45px 15px;*/
-/*}*/
-
 .link a {
   text-decoration: none;
   font-family: arial, sans-serif;
@@ -357,6 +348,11 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
   margin-bottom: 0;
   text-transform: none;
+}
+
+.menu__link_hover:hover,
+.contact__text:hover{
+  color: #e4b164;
 }
 
 .fa-mobile {

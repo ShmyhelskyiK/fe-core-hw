@@ -5,7 +5,6 @@ body {
   background: url("../img/page-bg.jpg") no-repeat center center;
   background-size: cover;
   font-family: 'Pathway Gothic One', sans-serif;
-  /*text-transform: uppercase;*/
 }
 
 ol, ul, li {
@@ -41,11 +40,6 @@ h1,h2,h3,h4,h5,h6 {
   color: #263555;
 }
 
-/*h2 {*/
-  /*margin-bottom: 40px;*/
-  /*text-transform: uppercase;*/
-/*}*/
-
 .title {
   margin: 40px 0 30px;
   color: #263555;
@@ -79,7 +73,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 480px;
   font-size: 20px;
   margin: 0 auto;
-  padding: 20px 0 60px;
+  padding: 20px 0 20px;
   text-transform: uppercase;
 }
 
@@ -254,6 +248,11 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
   margin-bottom: 0;
   text-transform: none;
+}
+
+.menu__link_hover:hover,
+.contact__text:hover{
+  color: #e4b164;
 }
 
 .fa-mobile {
